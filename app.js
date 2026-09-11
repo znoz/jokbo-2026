@@ -12,6 +12,22 @@ fetch('menu.json')
       categoryEl.className = 'category';
 
       var titleEl;
+      if (category.path) {
+        titleEl = document.createElement('a');
+        titleEl.href = category.path;
+        titleEl.target = 'content';
+        titleEl.className = 'category-title lecture-link' + (category.ready === false ? ' not-ready' : '');
+        titleEl.textContent = category.title;
+        titleEl.addEventListener('click', function () {
+          document.querySelectorAll('.lecture-link').forEach(function (l) { l.classList.remove('active'); });
+          titleEl.classList.add('active');
+        });
+        categoryEl.appendChild(titleEl);
+        if (!firstLink && category.ready !== false) firstLink = titleEl;
+        sidebar.appendChild(categoryEl);
+        return;
+      }
+
       if (category.materials) {
         titleEl = document.createElement('a');
         titleEl.href = encodeURI(category.materials);
