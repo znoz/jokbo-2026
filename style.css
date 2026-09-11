@@ -70,6 +70,18 @@ a.category-title:hover {
   color: #fff;
   font-weight: 600;
 }
+.lecture-list a.not-ready {
+  color: #5b6472;
+  font-style: italic;
+}
+.lecture-list a.not-ready:hover {
+  color: #9aa4b8;
+}
+.lecture-list a.not-ready.active {
+  background: transparent;
+  border-left-color: transparent;
+  font-weight: normal;
+}
 .lecture-list .pending {
   display: block;
   padding: 9px 20px 9px 30px;

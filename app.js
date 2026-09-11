@@ -32,7 +32,7 @@ fetch('menu.json')
         var a = document.createElement('a');
         a.href = lesson.path;
         a.target = 'content';
-        a.className = 'lecture-link';
+        a.className = 'lecture-link' + (lesson.ready === false ? ' not-ready' : '');
         a.textContent = lesson.title;
         a.addEventListener('click', function () {
           document.querySelectorAll('.lecture-link').forEach(function (l) { l.classList.remove('active'); });
@@ -40,7 +40,7 @@ fetch('menu.json')
         });
         li.appendChild(a);
         list.appendChild(li);
-        if (!firstLink) firstLink = a;
+        if (!firstLink && lesson.ready !== false) firstLink = a;
       });
 
       (category.pending || []).forEach(function (text) {

@@ -15,8 +15,8 @@
       "materials": "materials/[2026] 산업안전보건교육(제조-사무3)_학습자료.pdf",
       "lessons": [
         { "title": "1. 물질안전보건자료에 관한 사항", "path": "course-3/lesson1.html" },
-        { "title": "2. 금연을 통한 건강관리 비법", "path": "course-3/lesson2.html" },
-        { "title": "3. 사고 발생 시 응급조치 및 심폐소생술", "path": "course-3/lesson3.html" }
+        { "title": "2. 금연을 통한 건강관리 비법", "path": "course-3/lesson2.html", "ready": false },
+        { "title": "3. 사고 발생 시 응급조치 및 심폐소생술", "path": "course-3/lesson3.html", "ready": false }
       ]
     }
   ]
