@@ -1,0 +1,88 @@
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+}
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+nav.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  background: #1f2430;
+  color: #d7dbe3;
+  overflow-y: auto;
+  padding: 20px 0 40px;
+}
+nav.sidebar h1 {
+  font-size: 16px;
+  color: #fff;
+  margin: 0 20px 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #333a4a;
+}
+.category {
+  margin-bottom: 6px;
+}
+.category-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #9aa4b8;
+  padding: 10px 20px 6px;
+  text-transform: none;
+  letter-spacing: 0.2px;
+}
+.lecture-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lecture-list li {
+  margin: 0;
+}
+.lecture-list a {
+  display: block;
+  padding: 9px 20px 9px 30px;
+  color: #d7dbe3;
+  text-decoration: none;
+  font-size: 14px;
+  border-left: 3px solid transparent;
+}
+.lecture-list a:hover {
+  background: #2a3040;
+  color: #fff;
+}
+.lecture-list a.active {
+  background: #2f6fed22;
+  border-left-color: #2f6fed;
+  color: #fff;
+  font-weight: 600;
+}
+.lecture-list .pending {
+  display: block;
+  padding: 9px 20px 9px 30px;
+  color: #5b6472;
+  font-size: 14px;
+  font-style: italic;
+}
+main.content {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+}
+main.content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  background: #f7f8fa;
+}
+@media (max-width: 700px) {
+  .layout { flex-direction: column; }
+  nav.sidebar { width: 100%; height: auto; max-height: 40vh; }
+  main.content { height: 60vh; }
+}

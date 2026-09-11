@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>직업병의 종류와 예방</title>
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --card-bg: #ffffff;
+    --text: #1f2430;
+    --muted: #5b6472;
+    --blue: #2f6fed;
+    --blue-bg: #eaf1ff;
+    --correct-bg: #eafaf0;
+    --correct-border: #34a853;
+    --border: #e3e6ea;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px 60px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 28px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .q-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .q-badge {
+    background: var(--blue);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+    flex-shrink: 0;
+  }
+  .points {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .q-text {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .options {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+  }
+  .options li {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .options li.correct {
+    background: var(--correct-bg);
+    border-color: var(--correct-border);
+    color: var(--text);
+    font-weight: 600;
+  }
+  .options li.correct::before {
+    content: "✔ ";
+    color: var(--correct-border);
+    font-weight: 700;
+  }
+  .answer-box {
+    background: var(--blue-bg);
+    border-left: 4px solid var(--blue);
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .answer-box span.ox-o { color: #1e8e3e; }
+  .answer-box span.ox-x { color: #d93025; }
+  .explain {
+    font-size: 13.5px;
+    color: var(--muted);
+    border-top: 1px dashed var(--border);
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  .explain b { color: var(--text); }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>직업병의 종류와 예방</h1>
+  <div class="subtitle">2026 산업안전보건교육(제조·사무4) 학습자료 기반 정답 및 해설</div>
+
+  <!-- 문제1 -->
+  <div class="card">
+    <div class="q-header"><span class="q-badge">문제1</span><span class="points">배점 20</span></div>
+    <div class="q-text">화학물질 취급 작업에서는 국소배기장치를 사용해 유해물질을 오염원 근처에서 바로 제거하는 것이 효과적이다.</div>
+    <div class="answer-box">정답: <span class="ox-o">O</span></div>
+    <div class="explain">
+      학습자료 "10. 화학물질 취급 작업에서 국소배기장치 사용"에 "국소배기장치를 사용해 유해물질을 <b>오염원 근처에서 바로 제거·배출</b>함으로써 근로자의 흡입 노출을 크게 줄인다. 이는 전체 환기보다 즉각적인 효과가 있어 화학물질 작업에서 가장 중요한 초기 방어 장치다"라고 명시되어 지문과 일치한다.
+    </div>
+  </div>
+
+  <!-- 문제2 -->
+  <div class="card">
+    <div class="q-header"><span class="q-badge">문제2</span><span class="points">배점 20</span></div>
+    <div class="q-text">감압병은 고압환경에서 저압환경으로 이동할 때 혈액 속 질소가 기포로 변하며 조직과 혈류를 막기 때문에, 단계적 감압 절차는 필수적이다.</div>
+    <div class="answer-box">정답: <span class="ox-o">O</span></div>
+    <div class="explain">
+      학습자료 "7. 감압병"에 "고압환경에서 저압환경으로 이동할 때 혈액 속 질소가 기포로 변하며 조직과 혈류를 막는다... <b>단계적 감압 절차는 필수적일 수밖에 없는 것</b>으로 이러한 질소 기포 생성을 억제해 감압병을 예방하는 핵심 조치다"라고 명시되어 지문과 일치한다.
+    </div>
+  </div>
+
+  <!-- 문제3 -->
+  <div class="card">
+    <div class="q-header"><span class="q-badge">문제3</span><span class="points">배점 20</span></div>
+    <div class="q-text">화학물질 취급 작업에서는 누출·피폭 사고 대비를 위해 비상세안대와 비상샤워기를 설치해 즉시 응급세척이 가능해야 한다.</div>
+    <div class="answer-box">정답: <span class="ox-o">O</span></div>
+    <div class="explain">
+      학습자료 "15. 누출·피폭 사고 대비 비상 세안대, 비상샤워기를 설치"에 "비상세안대·비상샤워기는 사고 발생 시 노출 부위를 <b>즉각 세척</b>해 조직 손상을 최소화하는 핵심 장비다. '즉시 세척 가능 여부'는 화학적 직업병 예방의 핵심 요소다"라고 명시되어 지문과 일치한다.
+    </div>
+  </div>
+
+  <!-- 문제4 -->
+  <div class="card">
+    <div class="q-header"><span class="q-badge">문제4</span><span class="points">배점 20</span></div>
+    <div class="q-text">다음 중 물리적 요인으로 인한 직업병 예방 관리의 원칙으로 옳지 않은 것은 무엇인가?</div>
+    <ul class="options">
+      <li>1. 고열·저온 환경에서는 작업시간 조정과 휴식 배치를 통해 체온 불균형을 완화할 수 있다.</li>
+      <li>2. 방사선이나 이상기압 작업은 특수 건강진단과 사전 점검을 통해 근로자 상태를 지속적으로 평가해야 한다.</li>
+      <li class="correct">3. 소음·진동 측정 결과가 기준치 이내라면, 보호구 지급이나 환경 개선은 선택적으로 운영할 수 있다.</li>
+      <li>4. 위험환경 작업자에게는 사례 중심의 교육을 실시해 물리적 요인의 특성과 대응 방법을 실제 상황에 맞게 이해시키는 것이 중요하다.</li>
+    </ul>
+    <div class="answer-box">정답: <span class="ox-o">3번</span></div>
+    <div class="explain">
+      학습자료 "2. 물리적 요인으로 인한 직업병 예방 관리의 원칙"에 "소음·진동 측정값이 기준치 이내라고 해도, 작업시간·장비 노후도·개인별 민감도 등에 따라 건강 영향을 받을 가능성이 존재한다. 따라서 <b>보호구 지급·환경 개선을 선택적으로 운영해도 된다는 판단은 위험하다</b>. 물리적 요인은 변동성이 크기 때문에 지속적 예방조치가 필요하다"라고 명시되어 있다. 3번 선택지는 이 원칙과 정반대이므로 옳지 않은 설명이다. 1·2·4번은 모두 학습자료 원문과 일치한다.
+    </div>
+  </div>
+
+  <footer>
+    출처: 2026 산업안전보건교육(제조·사무4) 학습자료 · 직업병의 종류와 예방 항목 기반
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>족보 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <nav class="sidebar" id="sidebar">
+    <h1>족보 2026</h1>
+  </nav>
+  <main class="content">
+    <iframe name="content" id="contentFrame"></iframe>
+  </main>
+</div>
+<script>
+  fetch('menu.json')
+    .then(function (res) { return res.json(); })
+    .then(function (menu) {
+      var sidebar = document.getElementById('sidebar');
+      var titleEl = sidebar.querySelector('h1');
+      titleEl.textContent = menu.title;
+
+      var firstLink = null;
+
+      menu.categories.forEach(function (category) {
+        var categoryEl = document.createElement('div');
+        categoryEl.className = 'category';
+
+        var titleDiv = document.createElement('div');
+        titleDiv.className = 'category-title';
+        titleDiv.textContent = category.title;
+        categoryEl.appendChild(titleDiv);
+
+        var list = document.createElement('ul');
+        list.className = 'lecture-list';
+
+        (category.lessons || []).forEach(function (lesson) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = lesson.path;
+          a.target = 'content';
+          a.className = 'lecture-link';
+          a.textContent = lesson.title;
+          a.addEventListener('click', function () {
+            document.querySelectorAll('.lecture-link').forEach(function (l) { l.classList.remove('active'); });
+            a.classList.add('active');
+          });
+          li.appendChild(a);
+          list.appendChild(li);
+          if (!firstLink) firstLink = a;
+        });
+
+        (category.pending || []).forEach(function (text) {
+          var li = document.createElement('li');
+          var span = document.createElement('span');
+          span.className = 'pending';
+          span.textContent = text;
+          li.appendChild(span);
+          list.appendChild(li);
+        });
+
+        categoryEl.appendChild(list);
+        sidebar.appendChild(categoryEl);
+      });
+
+      if (firstLink) {
+        firstLink.classList.add('active');
+        document.getElementById('contentFrame').src = firstLink.getAttribute('href');
+      }
+    });
+</script>
+</body>
+</html>

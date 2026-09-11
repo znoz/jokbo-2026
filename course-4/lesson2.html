@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>제조업 근로자 재해 예방</title>
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --card-bg: #ffffff;
+    --text: #1f2430;
+    --muted: #5b6472;
+    --blue: #2f6fed;
+    --blue-bg: #eaf1ff;
+    --correct-bg: #eafaf0;
+    --correct-border: #34a853;
+    --border: #e3e6ea;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px 60px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 28px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .q-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .q-badge {
+    background: var(--blue);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+    flex-shrink: 0;
+  }
+  .points {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .q-text {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .options {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+  }
+  .options li {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .options li.correct {
+    background: var(--correct-bg);
+    border-color: var(--correct-border);
+    color: var(--text);
+    font-weight: 600;
+  }
+  .options li.correct::before {
+    content: "✔ ";
+    color: var(--correct-border);
+    font-weight: 700;
+  }
+  .answer-box {
+    background: var(--blue-bg);
+    border-left: 4px solid var(--blue);
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .answer-box span.ox-o { color: #1e8e3e; }
+  .answer-box span.ox-x { color: #d93025; }
+  .explain {
+    font-size: 13.5px;
+    color: var(--muted);
+    border-top: 1px dashed var(--border);
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  .explain b { color: var(--text); }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>제조업 근로자 재해 예방</h1>
+  <div class="subtitle">2026 산업안전보건교육(제조·사무4) 학습자료 기반 정답 및 해설</div>
+
+  <!-- 문제1 -->
+  <div class="card">
+    <div class="q-header"><span class="q-badge">문제1</span><span class="points">배점 20</span></div>
+    <div class="q-text">화재·폭발·파열·누출 재해는 주로 전기설비 절연 저하와 누전으로 발생하며, 인화성 물질 취급 과정이나 용접·절단 작업과는 큰 관련이 없는 것으로 설명된다.</div>
+    <div class="answer-box">정답: <span class="ox-x">X</span></div>
+    <div class="explain">
+      학습자료 "9. 화재·폭발·파열·누출 재해"에는 주된 원인이 "<b>인화성 물질 취급 과정에서의 부주의와 불충분한 환기, 용접·절단·탱크 내부 작업 같은 화기 작업</b>"이라고 명시되어 있다. 지문은 이를 정반대로(전기설비 절연저하·누전이 주원인이며 인화성 물질·용접과 무관) 설명하므로 틀린 설명이다.
+    </div>
+  </div>
+
+  <!-- 문제2 -->
+  <div class="card">
+    <div class="q-header"><span class="q-badge">문제2</span><span class="points">배점 20</span></div>
+    <div class="q-text">작업 전 안전점검은 화학설비 정비·보수와 같은 고위험 특수 작업에서만 의무적으로 요구되며, 일상적인 반복 작업에는 효율 저하를 막기 위해 생략할 수 있다고 설명된다.</div>
+    <div class="answer-box">정답: <span class="ox-x">X</span></div>
+    <div class="explain">
+      학습자료 "6. 작업 전 안전점검"에는 "작업 전 안전점검은 산업현장에서 사고 예방을 위한 가장 기본적이면서도 중요한 절차이며... <b>근로자, 신입 근로자가 작업 전 점검을 일상적인 습관으로 가져야 한다</b>"고 명시되어 있다. 특정 고위험 작업에만 한정하거나 반복 작업에서 생략 가능하다는 지문 내용은 이 원칙과 맞지 않는다.
+    </div>
+  </div>
+
+  <!-- 문제3 -->
+  <div class="card">
+    <div class="q-header"><span class="q-badge">문제3</span><span class="points">배점 20</span></div>
+    <div class="q-text">산업안전보건공단은 사망사고 발생 빈도가 높은 전기·크레인·지게차·사다리·리프트·컨베이어·선반·분쇄·혼합기·성형기·프레스 취급작업을 '제조업 사망재해 10대 작업'으로 지정해 중점 관리 작업으로 운영한다고 설명한다.</div>
+    <div class="answer-box">정답: <span class="ox-o">O</span></div>
+    <div class="explain">
+      학습자료 "5. 산업안전보건공단 중점 관리사항"의 문구와 지문이 정확히 일치한다: "산업안전보건공단은 사망사고 발생 빈도가 높은 전기·크레인·지게차·사다리·리프트·컨베이어·선반·분쇄·혼합기·성형기·프레스 취급작업을 '제조업 사망재해 10대 작업'으로 지정해 중점 관리 작업으로 운영하고 있습니다."
+    </div>
+  </div>
+
+  <!-- 문제4 -->
+  <div class="card">
+    <div class="q-header"><span class="q-badge">문제4</span><span class="points">배점 20</span></div>
+    <div class="q-text">다음 중 초기 안전교육의 필수 이행 원칙에 대한 설명으로 옳지 않은 것은 무엇인가?</div>
+    <ul class="options">
+      <li>1. 신입 근로자는 입사 초기에 법령에 따른 안전보건교육을 반드시 이수해야 하며, 사업주는 교육이 형식적 절차에 그치지 않도록 정기적이고 체계적인 방식으로 운영해야 한다.</li>
+      <li>2. 초기 안전교육은 단순한 이론 전달이 아니라 실제 작업 중 발생 가능한 위험 상황을 중심으로 구성하고, 반복 훈련과 시뮬레이션을 통해 작업 위험요인과 대응 방법을 몸으로 익히도록 하는 것이 중요하다.</li>
+      <li>3. 안전보건관리담당자가 신입 근로자에게 안전한 작업 절차를 직접 시연하고, 사고 징후와 위험 신호를 실제 사례를 통해 설명해 현장에 바로 적용할 수 있도록 지도하는 것은 초기 안전교육의 중요한 요소이다.</li>
+      <li class="correct">4. 초기 안전교육은 법정 교육시간과 교재만 충족된다면 동영상 시청과 이론 강의만으로도 충분하므로, 신입 근로자가 위험 상황을 체험하거나 안전 절차를 직접 따라 해 보는 실습과 현장 시연은 필수적인 과정으로 볼 수 없다.</li>
+    </ul>
+    <div class="answer-box">정답: <span class="ox-o">4번</span></div>
+    <div class="explain">
+      학습자료 "2. 초기 안전교육의 필수 이행 원칙"에는 "초기 안전교육은 <b>형식적 교육보다는 실습 기반 훈련과 시연 지도</b>를 통해 신입 근로자가 위험 상황과 안전 절차를 몸으로 익히도록 하는 것이 중요합니다"라고 명시되어 있다. 4번 선택지처럼 동영상·이론 강의만으로 충분하고 실습·시연이 필수가 아니라는 설명은 이 원칙과 정반대이므로 옳지 않은 설명이다. 1·2·3번은 모두 학습자료 원문과 일치한다.
+    </div>
+  </div>
+
+  <footer>
+    출처: 2026 산업안전보건교육(제조·사무4) 학습자료 · 제조업 근로자 재해 예방 항목 기반
+  </footer>
+</div>
+</body>
+</html>
