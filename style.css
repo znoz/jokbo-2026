@@ -72,7 +72,6 @@ a.category-title:hover {
 }
 .lecture-list a.not-ready {
   color: #5b6472;
-  font-style: italic;
 }
 .lecture-list a.not-ready:hover {
   color: #9aa4b8;
