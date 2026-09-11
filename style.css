@@ -11,7 +11,7 @@ html, body {
   width: 100%;
 }
 nav.sidebar {
-  width: 280px;
+  width: 340px;
   flex-shrink: 0;
   background: #1f2430;
   color: #d7dbe3;
