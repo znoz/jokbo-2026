@@ -3,36 +3,190 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>금연을 통한 건강관리 비법</title>
+<title>금연을 통한 건강관리 비법 - 문제 및 정답</title>
 <style>
+  :root {
+    --bg: #f7f8fa;
+    --card-bg: #ffffff;
+    --text: #1f2430;
+    --muted: #5b6472;
+    --blue: #2f6fed;
+    --blue-bg: #eaf1ff;
+    --correct-bg: #eafaf0;
+    --correct-border: #34a853;
+    --wrong-bg: #fdeceb;
+    --border: #e3e6ea;
+  }
+  * { box-sizing: border-box; }
   body {
     margin: 0;
-    height: 100vh;
+    padding: 24px 16px 60px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 28px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .q-header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: #f7f8fa;
-    color: #5b6472;
-    font-family: "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    gap: 10px;
+    margin-bottom: 10px;
   }
-  .placeholder {
-    text-align: center;
+  .q-badge {
+    background: var(--blue);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+    flex-shrink: 0;
   }
-  .placeholder h1 {
-    font-size: 20px;
-    color: #1f2430;
-    margin-bottom: 8px;
+  .points {
+    font-size: 12px;
+    color: var(--muted);
   }
-  .placeholder p {
+  .q-text {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .options {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+  }
+  .options li {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin-bottom: 6px;
     font-size: 14px;
-    font-style: italic;
+    color: var(--muted);
+  }
+  .options li.correct {
+    background: var(--correct-bg);
+    border-color: var(--correct-border);
+    color: var(--text);
+    font-weight: 600;
+  }
+  .options li.correct::before {
+    content: "✔ ";
+    color: var(--correct-border);
+    font-weight: 700;
+  }
+  .answer-box {
+    background: var(--blue-bg);
+    border-left: 4px solid var(--blue);
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .answer-box span.ox-o { color: #1e8e3e; }
+  .answer-box span.ox-x { color: #d93025; }
+  .explain {
+    font-size: 13.5px;
+    color: var(--muted);
+    border-top: 1px dashed var(--border);
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  .explain b { color: var(--text); }
+  .source {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--blue);
+    background: var(--blue-bg);
+    padding: 2px 8px;
+    border-radius: 6px;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 30px;
   }
 </style>
 </head>
 <body>
-  <div class="placeholder">
-    <h1>금연을 통한 건강관리 비법</h1>
-    <p>콘텐츠 준비중입니다.</p>
+<div class="wrap">
+  <h1>금연을 통한 건강관리 비법 · 산업안전보건교육 문제 풀이</h1>
+  <div class="subtitle">2026 산업안전보건교육(제조·사무3) 학습자료 기반 정답 및 해설</div>
+
+  <!-- 문제1 -->
+  <div class="card">
+    <div class="q-header"><span class="q-badge">문제1</span><span class="points">배점 20</span></div>
+    <div class="q-text">「국민건강증진법」 제9조 제4항과 WHO 담배규제기본협약(FCTC) 제8조에 따라, 모든 실내 사업장과 실내 장소, 대중교통수단에서는 금연이 원칙이며, 시설의 관리자 등은 금연구역 지정과 금연 안내표지 설치 의무를 진다.</div>
+    <div class="answer-box">정답: <span class="ox-o">O</span></div>
+    <div class="explain">
+      학습자료 "9. 금연구역 지정의 법적 근거"에 "국민건강증진법 <b>제9조 제4항</b>과 WHO FCTC <b>제8조</b>에 따라, 모든 실내 사업장과 실내 장소, 대중교통수단에서는 금연이 원칙"이며, "공중이 이용하는 시설의 소유자·점유자·관리자는 <b>금연구역 지정 의무</b>를 이행하고, 시행규칙 별표 2에 따른 <b>금연 안내표지를 설치·관리</b>해야 한다"고 명시되어 지문과 일치한다.
+    </div>
   </div>
+
+  <!-- 문제2 -->
+  <div class="card">
+    <div class="q-header"><span class="q-badge">문제2</span><span class="points">배점 20</span></div>
+    <div class="q-text">니코틴 패치는 체내 니코틴 농도를 짧은 시간에 급격히 높여 흡연 욕구를 즉시 억제하는 데 초점을 둔 보조제로, 효과는 빠르지만 작용 시간이 짧아 자주 교체해야 한다.</div>
+    <div class="answer-box">정답: <span class="ox-x">X</span></div>
+    <div class="explain">
+      학습자료 "11. 니코틴 패치"에 "니코틴 패치는 피부를 통해 <b>16~24시간 동안 일정량의 니코틴을 지속 공급</b>하여 혈중 농도를 <b>안정적으로 유지</b>함으로써 금단증상을 완화하는 방식"이라고 명시되어 있어, "짧은 시간에 급격히 높여 즉시 억제"하고 "작용 시간이 짧아 자주 교체"한다는 지문과 정반대이므로 틀린 설명이다.
+    </div>
+  </div>
+
+  <!-- 문제3 -->
+  <div class="card">
+    <div class="q-header"><span class="q-badge">문제3</span><span class="points">배점 20</span></div>
+    <div class="q-text">담배는 17세기 초 우리나라에 광해군 시기 일본을 통해 유입되었고, 처음에는 '담파고'·'담파괴' 등의 한자어로 불리다가 '담바고'를 거쳐 현재의 '담배'라는 명칭으로 정착한 것으로 알려져 있다.</div>
+    <div class="answer-box">정답: <span class="ox-o">O</span></div>
+    <div class="explain">
+      학습자료 "4. 담배의 유래"에 "담배는 <b>17세기 초 광해군 시기</b>에 <b>일본을 통해</b> 전해졌으며, '담파고'·'담파괴' 등의 한자어로 쓰이다가 발음 변화인 <b>'담바고'</b>를 거쳐 오늘날의 '담배'라는 이름으로 정착했습니다"라고 명시되어 지문과 정확히 일치한다.
+    </div>
+  </div>
+
+  <!-- 문제4 -->
+  <div class="card">
+    <div class="q-header"><span class="q-badge">문제4</span><span class="points">배점 20</span></div>
+    <div class="q-text">다음 중 전자담배의 유해성에 대한 설명으로 옳지 않은 것은 무엇인가?</div>
+    <ul class="options">
+      <li>1. 일부 전자담배 기기는 높은 농도의 니코틴을 전달하여 일반 궐련형 담배보다 더 강한 중독을 유발할 수 있다.</li>
+      <li>2. 전자담배 에어로졸에는 포름알데히드, 아세트알데히드, 중금속, 초미세입자 등 호흡기와 심혈관계에 손상을 줄 수 있는 다양한 유해 화학물질이 포함될 수 있다.</li>
+      <li class="correct">3. 전자담배 에어로졸은 주로 니코틴과 수증기로만 구성되어 있어, 혈류 변화나 심장 기능, 혈압에 미치는 영향은 기존 궐련형 담배에 비해 사실상 무시할 수 있을 정도로 미미한 편이다.</li>
+      <li>4. 청소년이나 비흡연자가 전자담배를 사용할 경우 천식, 기관지염, 호흡 곤란 등 호흡기 질환의 위험이 증가하며, 폐 손상과 염증 반응이 악화될 수 있다.</li>
+    </ul>
+    <div class="answer-box">정답: <span class="ox-o">3번</span></div>
+    <div class="explain">
+      학습자료 "1. 전자담배의 유해성"에 "전자담배 에어로졸은 주로 니코틴과 수증기로만 구성되어 있지만, <b>전자담배 증기 속 화합물이 혈류를 변화시키고, 심장 기능과 혈압에 악영향을 미칠 수 있다</b>"고 명시되어 있어, "영향이 사실상 무시할 수 있을 정도로 미미하다"는 3번 선택지는 이 내용에 정면으로 위배되므로 옳지 않은 설명이다. 1·2·4번은 모두 학습자료 원문과 일치한다.
+    </div>
+  </div>
+
+  <footer>
+    출처: 2026 산업안전보건교육(제조·사무3) 학습자료 · 관련 근거법령: 국민건강증진법, WHO 담배규제기본협약(FCTC)
+  </footer>
+</div>
 </body>
 </html>
