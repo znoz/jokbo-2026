@@ -29,12 +29,20 @@ nav.sidebar h1 {
   margin-bottom: 6px;
 }
 .category-title {
+  display: block;
   font-size: 13px;
   font-weight: 700;
   color: #9aa4b8;
   padding: 10px 20px 6px;
   text-transform: none;
   letter-spacing: 0.2px;
+  text-decoration: none;
+}
+a.category-title {
+  cursor: pointer;
+}
+a.category-title:hover {
+  color: #fff;
 }
 .lecture-list {
   list-style: none;

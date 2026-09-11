@@ -29,10 +29,18 @@
         var categoryEl = document.createElement('div');
         categoryEl.className = 'category';
 
-        var titleDiv = document.createElement('div');
-        titleDiv.className = 'category-title';
-        titleDiv.textContent = category.title;
-        categoryEl.appendChild(titleDiv);
+        var titleEl;
+        if (category.materials) {
+          titleEl = document.createElement('a');
+          titleEl.href = encodeURI(category.materials);
+          titleEl.target = '_blank';
+          titleEl.rel = 'noopener';
+        } else {
+          titleEl = document.createElement('div');
+        }
+        titleEl.className = 'category-title';
+        titleEl.textContent = category.title;
+        categoryEl.appendChild(titleEl);
 
         var list = document.createElement('ul');
         list.className = 'lecture-list';
