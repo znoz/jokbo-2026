@@ -237,6 +237,7 @@ footer {
   color: var(--muted);
   font-size: 12px;
   margin-top: 30px;
+  padding-bottom: 20px;
 }
 body.placeholder-page {
   height: 100vh;
